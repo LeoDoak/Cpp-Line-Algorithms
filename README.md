@@ -1,6 +1,6 @@
 # Cpp-Line-Algorithms
-* Completed for CSC-370 @ UNCW
-* Used C++m & CImg Library, compiled on a Mac M1 
+* Completed for Computer Graphics @ UNCW
+* Used C++ & CImg Library, compiled on a Mac M1 
 
 ## Line - Drawing Algorithms: 
 ### Bezier: (Description)
