@@ -2,7 +2,7 @@
 ///@class CSC-370
 ///@date 2/29/2024
 
-//g++ -o Curvetest Curvetest.cpp -O2 -lm -lpthread -I/usr/X11R6/include -L/usr/X11R6/lib -lm -lpthread -lX11
+//g++ -o Chaikins-Algorithm Chaikins-Algorithm.cpp -O2 -lm -lpthread -I/usr/X11R6/include -L/usr/X11R6/lib -lm -lpthread -lX11
 
 //For Chaikins algorithm curves
 #include <iostream>
@@ -28,8 +28,8 @@ int main (){
         window.display(image);
 	}
   }
-  image.save("CurveTestpoint.bmp");
-    cout << "User Picked" << coords_x.size() << "points\n"; 
+  //image.save("CurveTestpoint.bmp");
+    cout << "User Picked: " << coords_x.size() << " points\n"; 
 
     vector<int> coords_x_new; 
     vector<int> coords_y_new;
@@ -37,7 +37,7 @@ int main (){
 //lines and stuff 
     
 for (int count = 0; count < 7; count ++){ 
-    image.save("CurveTestconnec.bmp");
+    //image.save("CurveTestconnec.bmp");
     
     unsigned char color[] = {};
     //	* you can also set a random value:
@@ -77,6 +77,6 @@ for (int count = 0; count < 7; count ++){
      
     }
 
-image.save("CurveTest3point.bmp");
+//image.save("CurveTest3point.bmp");
 return 0; 
 }

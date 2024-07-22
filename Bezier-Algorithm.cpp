@@ -23,15 +23,15 @@ int main (){
     if (window.button()){
         int x = window.mouse_x();
         int y = window.mouse_y();
-        cout << x << ", " << y<< endl;
+        //cout << x << ", " << y<< endl;
         coords_x.push_back(x);//appends x 
         coords_y.push_back(y);//appends y 
         image.draw_circle(x, y, 2, color);  //5 is dot size 
         window.display(image);
 	}
   }
-    cout << "User Picked" << coords_x.size() << "points\n"; 
-image.save("BezierTestogpoints.bmp");
+    cout << "User Picked: " << coords_x.size() << " points\n"; 
+//image.save("BezierTestogpoints.bmp");
 // creates the new vectors for storing the new points in 
 vector<double> coords_x_new;  
 vector<double> coords_y_new;
@@ -40,7 +40,7 @@ vector<double> coords_y_new;
 // this is the loop for each count 
 // need to get the points at each tolerance level    
 for (double count = 0.0 ; count < 1.00; count = count + 0.01){ 
-    cout << "Count: " << count << "\n";  
+    //cout << "Count: " << count << "\n";  
     //creates the points of each tolerance along each line 
     for(int i = 0; i < coords_x.size()-1;i++){ 
         
@@ -57,7 +57,7 @@ for (double count = 0.0 ; count < 1.00; count = count + 0.01){
     vector<double> coords_y_tol;
 
    int length_x = coords_x_new.size(); 
-   cout << "length of x coords" << length_x << "\n";  
+   //cout << "length of x coords" << length_x << "\n";  
 
     while(length_x > 2){
          for(int i = 0; i < coords_x_new.size()-1;i++){
@@ -89,7 +89,7 @@ for (double count = 0.0 ; count < 1.00; count = count + 0.01){
     coords_y_new.clear(); 
 }
 
-image.save("BezierTestConnec.bmp");
+//image.save("BezierTestConnec.bmp");
 //Display an image
 CImgDisplay disp(image);
 //Keeps image displayed
