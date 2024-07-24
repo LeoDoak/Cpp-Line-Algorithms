@@ -2,9 +2,9 @@
 ///@class CSC-370
 ///@date 2/29/2024
 
-//g++ -o beziertest beziertest.cpp -O2 -lm -lpthread -I/usr/X11R6/include -L/usr/X11R6/lib -lm -lpthread -lX11
+//g++ -o Bezier-Algorithm.exe Bezier-Algorithm.cpp -O2 -lm -lpthread -I/usr/X11R6/include -L/usr/X11R6/lib -lm -lpthread -lX11
 
-// For Bezier Curves
+//For Bezier Curves
 
 #include <iostream>
 #include "CImg.h"
